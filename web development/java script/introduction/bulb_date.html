@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <body>
+    <!-- JavaScript can change HTML attribute values. -->
+    <!-- In this case JavaScript changes the value of the src (source) attribute of an image. -->
+    <h2>My first javascript</h2>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">Click me to display Date and Time.</button>
+    <p id="demo"></p>
+    <h2>What Can JavaScript Do?</h2>
+
+
+    <button onclick="document.getElementById('myImage').src='light-bulb_1387-4-removebg-preview.png'">Turn on the light</button>
+
+    <img id="myImage" src="./you-will-never-leave-me-dark-anymore_144627-4946.jpg" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='you-will-never-leave-me-dark-anymore_144627-4946.jpg'">Turn off the light</button>
+    <img src="" alt="">
+ </body>
+ </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        .red-on-hover {
+            background-color: white;
+            transition: background-color 0.2s ease-in-out;
+            text-align: center;
+        }
+
+        .red-on-hover:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body style="text-align: center;background-color: aqua;">
+
+    <!-- part1 -->
+    <!-- Write a button element, it should do something e.g Alert Jane when someone clicks on it. -->
+
+    <button onclick="alert('Jane')">Alert Jane</button><br>
+
+
+   <!-- part3 -->
+   <!-- Write a <div> element which turns red when someone moves the mouse over it. -->
+
+    <input type="text" id="myInput" onchange="logInputValue()">
+
+    <div class="red-on-hover">This text turns red on hover!</div><br>
+
+  <!-- part2 -->
+  <!-- Make a html text input which logs the value when the input is changing. -->
+
+    <script>
+        function logInputValue() {
+            const inputValue = document.getElementById("myInput").value;
+            console.log("Input value changed to:", inputValue);
+        }
+    </script>
+    
+</body>
+</html>

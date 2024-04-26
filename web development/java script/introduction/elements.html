@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hide and Show Element</title>
+  <style>
+    #myElement {
+      width: 200px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+    <p id="text">My name is lumala mariam nasejje</p>
+    <script> var textElement = document.getElementById("text");textElement.style.fontSize = "30px";
+    </script>
+
+<button onclick="toggleVisibility()">My Element</button>
+<div id="myElement">This is the element to hide and show.</div>
+
+<script>
+  
+  function toggleVisibility() {
+    var element = document.getElementById("myElement");
+
+
+    if (element.style.display === "none") {
+
+      element.style.display = "block";
+    } else {
+
+      element.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>

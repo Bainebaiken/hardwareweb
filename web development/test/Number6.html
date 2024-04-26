@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title> lumala</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="">
+</head>
+<body style="text-align: center;">
+    <h1 >mariam form</h1>
+        <form id="form1" onsubmit="return validateForm1()">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" ><br><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" ><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" ><br><br>
+            <button type="submit">Submit</button>
+      </form>
+                  
+      <script>
+         function validateForm1() {
+           if (document.getElementById("email").value === "" ||
+               document.getElementById("name").value === "" ||
+               document.getElementById("password").value === "") {
+              alert("Please fill in all values.");
+                  return false;
+                }
+                return true; 
+                  }
+      </script>
+                
+        <script src="" async defer></script>
+</body>
+</html>
